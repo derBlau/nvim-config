@@ -24,13 +24,13 @@ listed does not represent their priority.
 - [] C support
 - [] C++ support
 - [] Python support
-- [] LUA support
+- [x] LUA support
 - [x] Neotree
 - [x] Treesitter
 
-## Config
+## Core
 
-The config folder contains basic configuration files that set basic functionality and support all plugins
+The core folder contains basic configuration files that set basic functionality and support all plugins
 used in this config.
 
 - Lazy manages all plugins and its UI can be called via `:Lazy` 
@@ -47,3 +47,5 @@ automatically upon initialising NeoVim.
 - Lualine is a simple statusbar
 - Nvim-tree is a file explorer
 - Nvim-treesitter is a file parsers that enables smart syntax highlighting, code navigation and editing featurs, amongst others
+- Mason allows to manage external editor tooling, like LSP servers and all its related behaviour. Used in conjunction with
+NeoVim's native LSP tooling.

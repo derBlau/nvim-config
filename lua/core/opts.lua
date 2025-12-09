@@ -30,3 +30,4 @@ set.wrapscan = true
 
 -- UI
 set.mouse = "a"
+set.clipboard= "unnamedplus"
