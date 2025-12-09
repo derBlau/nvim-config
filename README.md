@@ -17,7 +17,7 @@ Please do not use.
 Below a list of plugins that are included, or yet to be included, in the config. 
 
 - [] Git support
-- [] autopairs (), {}, [], "", and so on.
+- [x] autopairs (), {}, [], "", and so on.
 - [] Harpoon
 - [x] LSP integration
 - [x] Autocompletion
@@ -73,3 +73,5 @@ automatically upon initialising NeoVim.
 - Nvim-tree is a file explorer
 - Nvim-treesitter is a file parser that enables smart syntax highlighting, code navigation and editing featurs, amongst others
 - Telescope makes it able to quickly jump to a file within a directory and grepping from a bunch of files in it
+- Nvim-autopairs automatically adds matching paired-characters, such as "", {}, (), and so on. The cursor is automatically
+  moved inside the matching pair.
