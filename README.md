@@ -27,6 +27,7 @@ listed does not represent their priority.
 - [] LUA support
 - [x] Neotree
 - [x] Treesitter
+- [x] Telescope
 
 ## Core
 
@@ -49,3 +50,4 @@ automatically upon initialising NeoVim.
 - Nvim-treesitter is a file parsers that enables smart syntax highlighting, code navigation and editing featurs, amongst others
 - Mason allows to manage external editor tooling, like LSP servers and all its related behaviour. Used in conjunction with
 NeoVim's native LSP tooling.
+- Telescope makes it able to quickly jump to a file within a directory and grepping from a bunch of files in it
