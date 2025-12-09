@@ -3,6 +3,7 @@
 The current config aims at serving as a simple, but effective environment
 to write simple projects in rust, c, c++, python and javascript.
 
+
 # Current state
 
 The configuration is currently largely incomplete and a lot of the most basic functionality
@@ -10,24 +11,20 @@ provided by most, if not all, IDEs is missing.
 
 Please do not use.
 
+
 ## To integrate functionality
 
 The items below are to be included in the config. The order in which they are
 listed does not represent their priority.
 
 - [] autopairs (), {}, [], "", and so on.
-- [] LSP integration
-- [] Autocompletion
-- [] Rust support
-- [] Javascript support
-- [] Typescript support
-- [] C support
-- [] C++ support
-- [] Python support
-- [] LUA support
+- [x] LSP integration
+- [x] Autocompletion
+- [x] LUA support
 - [x] Neotree
 - [x] Treesitter
 - [x] Telescope
+
 
 ## Core
 
@@ -39,15 +36,39 @@ used in this config.
   CTRL + S whilst in normal or insert mode to save the current buffer
 - Opts exposes the vim api and sets the values used in this config, for instance:
   sets leader, having [relative] number lines, search behaviour, UI, and so on
+- Lsp contains the logic that controls the integration of language server protocols, like inlay hints and autocompletion.
+  Refer to the LSP support section for further details.
+
+
+## LSP support
+
+  The LSPs used in this configuration are all contained in individual files inside `root/lsp`. 
+ 
+  In order to add a new LSP, one must first download it manually through the terminal, as this configuration does not use
+`Mason`, and then create the configuration file within the aforementioned folder. The LSP must finally be called by passing
+to the table in `core/lsp.lua`.
+
+  Inlay hints and highlighting and any other form of diagnostics configuration is contained in `root/core/lsp.lua`. Right now,
+the configuration runs with default settings.
+
+  The table below represents the language servers that are currently supported in the present configuration.
+
+- [x] Rust
+- [] Javascript
+- [] Typescript
+- [] C
+- [] C++
+- [] Python
+- [x] Lua
+
 
 ## Plugins
 
 The plugins folder contains all plugins that are used in the config. The plugins are called by lazy and loaded
 automatically upon initialising NeoVim.
 
+- Colorscheme contains whatever flavour of theme being used
 - Lualine is a simple statusbar
 - Nvim-tree is a file explorer
-- Nvim-treesitter is a file parsers that enables smart syntax highlighting, code navigation and editing featurs, amongst others
-- Mason allows to manage external editor tooling, like LSP servers and all its related behaviour. Used in conjunction with
-NeoVim's native LSP tooling.
+- Nvim-treesitter is a file parser that enables smart syntax highlighting, code navigation and editing featurs, amongst others
 - Telescope makes it able to quickly jump to a file within a directory and grepping from a bunch of files in it
