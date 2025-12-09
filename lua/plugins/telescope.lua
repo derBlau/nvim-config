@@ -11,6 +11,6 @@ return {
     set("n", "<C-f>", builtin.find_files, { desc = "Find files in cwd" })
     set("n", "<leader>fg", builtin.live_grep, { desc = "Live grep" })
 
-  end
+ end
 }
 
