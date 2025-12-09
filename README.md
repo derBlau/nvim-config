@@ -25,8 +25,8 @@ listed does not represent their priority.
 - [] C++ support
 - [] Python support
 - [] LUA support
-- [] Neotree
-- [] Treesitter
+- [x] Neotree
+- [x] Treesitter
 
 ## Config
 
@@ -45,3 +45,5 @@ The plugins folder contains all plugins that are used in the config. The plugins
 automatically upon initialising NeoVim.
 
 - Lualine is a simple statusbar
+- Nvim-tree is a file explorer
+- Nvim-treesitter is a file parsers that enables smart syntax highlighting, code navigation and editing featurs, amongst others
