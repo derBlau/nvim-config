@@ -12,12 +12,13 @@ provided by most, if not all, IDEs is missing.
 Please do not use.
 
 
-## To integrate functionality
+## Available functionality
 
-The items below are to be included in the config. The order in which they are
-listed does not represent their priority.
+Below a list of plugins that are included, or yet to be included, in the config. 
 
+- [] Git support
 - [] autopairs (), {}, [], "", and so on.
+- [] Harpoon
 - [x] LSP integration
 - [x] Autocompletion
 - [x] LUA support
