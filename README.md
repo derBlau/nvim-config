@@ -24,7 +24,7 @@ listed does not represent their priority.
 - [] C support
 - [] C++ support
 - [] Python support
-- [x] LUA support
+- [] LUA support
 - [x] Neotree
 - [x] Treesitter
 
