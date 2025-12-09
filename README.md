@@ -3,10 +3,6 @@
 The current config aims at serving as a simple, but effective environment
 to write simple projects in rust, c, c++, python and javascript.
 
-The configuration itself is heavily based on the `From 0 to IDE in NEOVIM from scratch`
-Youtube series by `@typecraft`. The link to the channel is displayed below in the appropriate
-section. 
-
 # Current state
 
 The configuration is currently largely incomplete and a lot of the most basic functionality
@@ -28,9 +24,24 @@ listed does not represent their priority.
 - [] C support
 - [] C++ support
 - [] Python support
+- [] LUA support
+- [] Neotree
+- [] Treesitter
 
-## Other To-Do's
+## Config
 
-- [] move the general keymap configuration from the telescope file to its own file
-- [] research and expand keymap repertoire
-- [] breakdown the current plugin config in this file, explaining what each of the plugins do
+The config folder contains basic configuration files that set basic functionality and support all plugins
+used in this config.
+
+- Lazy manages all plugins and its UI can be called via `:Lazy` 
+- Keymaps contains all the shorcuts used in the config that do not depend on plugins, for instance:
+  CTRL + S whilst in normal or insert mode to save the current buffer
+- Opts exposes the vim api and sets the values used in this config, for instance:
+  sets leader, having [relative] number lines, search behaviour, UI, and so on
+
+## Plugins
+
+The plugins folder contains all plugins that are used in the config. The plugins are called by lazy and loaded
+automatically upon initialising NeoVim.
+
+- Lualine is a simple statusbar
