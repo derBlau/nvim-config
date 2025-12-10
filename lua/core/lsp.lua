@@ -2,7 +2,8 @@
 -- Add to the list below for them to be enabled
 vim.lsp.enable({
   "lua-language-server",
-  "rust-analyzer"
+  "rust-analyzer",
+  "ts_ls",
 })
 
 -- Native completion and custom keymaps

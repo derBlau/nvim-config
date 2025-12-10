@@ -7,7 +7,11 @@ to write simple projects in rust, c, c++, python and javascript.
 # Current state
 
   The config is currently quite minimal, but it is functional enough that it could be used
-for working on projects with reasonable ease, in Rust and Lua.
+for working on projects with reasonable ease.
+
+  There is currently a problem with LSP completion suggestions. The LSPs effectively attach to
+buffers and are able to offer suggestions; however, they will not give suggestions regarding
+locally defined variables or functions.
 
 ## Available functionality
 
@@ -55,8 +59,8 @@ the lsp.
   The table below represents the language servers that are currently supported in the present configuration.
 
 - [x] Rust
-- [] Javascript
-- [] Typescript
+- [x] Javascript
+- [x] Typescript
 - [] C
 - [] C++
 - [] Python
