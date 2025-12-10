@@ -18,7 +18,6 @@ for working on projects with reasonable ease, in Rust and Lua.
 - [] Harpoon
 - [x] LSP integration
 - [x] Autocompletion
-- [x] LUA support
 - [x] Neotree
 - [x] Treesitter
 - [x] Telescope
@@ -42,9 +41,9 @@ used in this config.
 
   The LSPs used in this configuration are all contained in individual files inside `root/lsp`. 
  
-  In order to add a new LSP, one must first download it manually through the terminal, as this configuration does not use
-`Mason`, and then create the configuration file within the aforementioned folder. The LSP must finally be called by passing
-to the table in `core/lsp.lua`.
+  In order to add a new LSP, one must first download it manually through the terminal, as this configuration does not use `Mason`,
+and then create the configuration file within the aforementioned folder. The LSP must finally be called by passing to the table
+in `core/lsp.lua`.
 
   Inlay hints and highlighting and any other form of diagnostics configuration is contained in `root/core/lsp.lua`. Right now,
 the configuration runs with default settings.
