@@ -62,6 +62,7 @@ the lsp.
 - [x] C++
 - [x] Python
 - [x] Lua
+- [x] Bash
 
 -----
 ## Plugins

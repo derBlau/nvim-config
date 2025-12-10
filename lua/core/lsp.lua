@@ -5,7 +5,8 @@ vim.lsp.enable({
   "rust-analyzer",
   "ts_ls",
   "pyright",
-  "clangd"
+  "clangd",
+  "bashls"
 })
 
 -- Native completion and custom keymaps
