@@ -9,8 +9,8 @@ return {
   config = function()
     -- custom mappings
     local set = vim.keymap.set
-    
-    set("n", "<C-n>", ":NvimTreeToggle<CR>")
+    set("n", "<leader>nf", ":NvimTreeFocus<CR>", { desc = "Opens and focuses on File Tree if closed" })
+    set("n", "<leader>nt", ":NvimTreeToggle<CR>", { desc = "Toggles File Tree" })
 
     -- call setup
     require("nvim-tree").setup {}
