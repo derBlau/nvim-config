@@ -52,6 +52,10 @@ to the table in `core/lsp.lua`.
   Inlay hints and highlighting and any other form of diagnostics configuration is contained in `root/core/lsp.lua`. Right now,
 the configuration runs with default settings.
 
+  A set of universal keymaps were added to the different LSPs that allow the user to jump to definitions/declarations and even
+rename variables. A unviersal formatter keymap was also provided, but it it should be noted that it only works if supported by
+the lsp.
+
   The table below represents the language servers that are currently supported in the present configuration.
 
 - [x] Rust
