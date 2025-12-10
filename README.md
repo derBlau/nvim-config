@@ -9,9 +9,6 @@ to write simple projects in rust, c, c++, python and javascript.
   The config is currently quite minimal, but it is functional enough that it could be used
 for working on projects with reasonable ease.
 
-  There is currently a problem with LSP completion suggestions. The LSPs effectively attach to
-buffers and are able to offer suggestions; however, they will not give suggestions regarding
-locally defined variables or functions.
 
 ## Available functionality
 
@@ -79,3 +76,4 @@ automatically upon initialising NeoVim.
 - Telescope makes it able to quickly jump to a file within a directory and grepping from a bunch of files in it
 - Nvim-autopairs automatically adds matching paired-characters, such as "", {}, (), and so on. The cursor is automatically
   moved inside the matching pair.
+- Blink is a completion plugin that attaches to the LSP configuration. It works out-of-the-box.
