@@ -1,20 +1,17 @@
 # About this config
 
-The current config aims at serving as a simple, but effective environment
+  The current config aims at serving as a simple, but effective environment
 to write simple projects in rust, c, c++, python and javascript.
 
 
 # Current state
 
-The configuration is currently largely incomplete and a lot of the most basic functionality
-provided by most, if not all, IDEs is missing. 
-
-Please do not use.
-
+  The config is currently quite minimal, but it is functional enough that it could be used
+for working on projects with reasonable ease, in Rust and Lua.
 
 ## Available functionality
 
-Below a list of plugins that are included, or yet to be included, in the config. 
+  Below a list of plugins that are included, or yet to be included, in the config. 
 
 - [] Git support
 - [x] autopairs (), {}, [], "", and so on.
@@ -29,7 +26,7 @@ Below a list of plugins that are included, or yet to be included, in the config.
 
 ## Core
 
-The core folder contains basic configuration files that set basic functionality and support all plugins
+  The core folder contains basic configuration files that set basic functionality and support all plugins
 used in this config.
 
 - Lazy manages all plugins and its UI can be called via `:Lazy` 
@@ -69,7 +66,7 @@ the lsp.
 
 ## Plugins
 
-The plugins folder contains all plugins that are used in the config. The plugins are called by lazy and loaded
+  The plugins folder contains all plugins that are used in the config. The plugins are called by lazy and loaded
 automatically upon initialising NeoVim.
 
 - Colorscheme contains whatever flavour of theme being used
