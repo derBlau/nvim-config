@@ -58,8 +58,8 @@ the lsp.
 - [x] Rust
 - [x] Javascript
 - [x] Typescript
-- [] C
-- [] C++
+- [x] C
+- [x] C++
 - [x] Python
 - [x] Lua
 
