@@ -60,7 +60,7 @@ the lsp.
 - [x] Typescript
 - [] C
 - [] C++
-- [] Python
+- [x] Python
 - [x] Lua
 
 -----

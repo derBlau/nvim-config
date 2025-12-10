@@ -4,6 +4,7 @@ vim.lsp.enable({
   "lua-language-server",
   "rust-analyzer",
   "ts_ls",
+  "pyright"
 })
 
 -- Native completion and custom keymaps
